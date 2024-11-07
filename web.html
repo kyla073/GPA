@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA, Height, Weight Input</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .result {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>GPA, Height, Weight </h1>
+
+  <script>
+    let gpa = parseFloat(prompt("Enter your GPA:"));
+    let height = parseFloat(prompt("Enter your height:"));
+    let weight = parseFloat(prompt("Enter your weight:"));
+
+    document.write("<p>GPA: " + gpa.toFixed(2) + "</p>");
+    document.write("<p>Height: " + height.toFixed(2) + "</p>");
+    document.write("<p>Weight: " + weight.toFixed(2) + "</p>");
+  </script>
+</body>
+</html>
